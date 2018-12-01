@@ -1,0 +1,57 @@
+[17-Aug-2018 08:34:04 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/josep1957/public_html/sitexmlmap/inc/classes/LayoutEngine.class.php:59
+Stack trace:
+#0 /home/josep1957/public_html/sitexmlmap/inc/functions/functions.inc.php(99): LayoutEngine->addContentFooter('')
+#1 /home/josep1957/public_html/sitexmlmap/inc/startup.php(54): init()
+#2 /home/josep1957/public_html/sitexmlmap/index.php(6): require_once('/home/josep1957...')
+#3 {main}
+  thrown in /home/josep1957/public_html/sitexmlmap/inc/classes/LayoutEngine.class.php on line 59
+[17-Aug-2018 08:34:08 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/josep1957/public_html/sitexmlmap/inc/classes/LayoutEngine.class.php:59
+Stack trace:
+#0 /home/josep1957/public_html/sitexmlmap/inc/functions/functions.inc.php(99): LayoutEngine->addContentFooter('')
+#1 /home/josep1957/public_html/sitexmlmap/inc/startup.php(54): init()
+#2 /home/josep1957/public_html/sitexmlmap/index.php(6): require_once('/home/josep1957...')
+#3 {main}
+  thrown in /home/josep1957/public_html/sitexmlmap/inc/classes/LayoutEngine.class.php on line 59
+[17-Aug-2018 08:34:17 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/josep1957/public_html/sitexmlmap/inc/classes/LayoutEngine.class.php:59
+Stack trace:
+#0 /home/josep1957/public_html/sitexmlmap/inc/functions/functions.inc.php(99): LayoutEngine->addContentFooter('')
+#1 /home/josep1957/public_html/sitexmlmap/inc/startup.php(54): init()
+#2 /home/josep1957/public_html/sitexmlmap/index.php(6): require_once('/home/josep1957...')
+#3 {main}
+  thrown in /home/josep1957/public_html/sitexmlmap/inc/classes/LayoutEngine.class.php on line 59
+[17-Aug-2018 08:37:41 UTC] PHP Fatal error:  Uncaught Error: [] operator not supported for strings in /home/josep1957/public_html/sitexmlmap/inc/classes/LayoutEngine.class.php:59
+Stack trace:
+#0 /home/josep1957/public_html/sitexmlmap/inc/functions/functions.inc.php(99): LayoutEngine->addContentFooter('')
+#1 /home/josep1957/public_html/sitexmlmap/inc/startup.php(54): init()
+#2 /home/josep1957/public_html/sitexmlmap/index.php(6): require_once('/home/josep1957...')
+#3 {main}
+  thrown in /home/josep1957/public_html/sitexmlmap/inc/classes/LayoutEngine.class.php on line 59
+[17-Aug-2018 08:38:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php:340
+Stack trace:
+#0 /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php(167): Crawler->_handleHeaders(Array)
+#1 /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php(67): Crawler->_getFilesForURL('http://www.piso...')
+#2 /home/josep1957/public_html/sitexmlmap/inc/functions/parsing.inc.php(249): Crawler->start()
+#3 /home/josep1957/public_html/sitexmlmap/inc/functions/parsing.inc.php(63): runCrawler(Array, Array)
+#4 /home/josep1957/public_html/sitexmlmap/index.php(22): parseFilesystem()
+#5 {main}
+  thrown in /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php on line 340
+[17-Aug-2018 08:38:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php:340
+Stack trace:
+#0 /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php(167): Crawler->_handleHeaders(Array)
+#1 /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php(67): Crawler->_getFilesForURL('http://www.piso...')
+#2 /home/josep1957/public_html/sitexmlmap/inc/functions/parsing.inc.php(249): Crawler->start()
+#3 /home/josep1957/public_html/sitexmlmap/inc/functions/parsing.inc.php(63): runCrawler(Array, Array)
+#4 /home/josep1957/public_html/sitexmlmap/index.php(22): parseFilesystem()
+#5 {main}
+  thrown in /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php on line 340
+[17-Aug-2018 08:51:41 UTC] PHP Notice:  Undefined index: loginuser in /home/josep1957/public_html/sitexmlmap/index.php on line 3
+[17-Aug-2018 08:51:44 UTC] PHP Notice:  Undefined index: loginuser in /home/josep1957/public_html/sitexmlmap/index.php on line 3
+[17-Aug-2018 15:33:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php:340
+Stack trace:
+#0 /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php(167): Crawler->_handleHeaders(Array)
+#1 /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php(67): Crawler->_getFilesForURL('http://www.piso...')
+#2 /home/josep1957/public_html/sitexmlmap/inc/functions/parsing.inc.php(249): Crawler->start()
+#3 /home/josep1957/public_html/sitexmlmap/inc/functions/parsing.inc.php(63): runCrawler(Array, Array)
+#4 /home/josep1957/public_html/sitexmlmap/index.php(22): parseFilesystem()
+#5 {main}
+  thrown in /home/josep1957/public_html/sitexmlmap/inc/classes/Crawler.class.php on line 340

@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* global o mas de un archivo */
+body{font-size:15px}
+
+#ancha{box-shadow: 8px 8px 13px rgba(144, 144, 144, 0.8) !important}
+#telini{font-size:18px; color:#555555; font-weight:500}
+#adrini{font-size:13px}
+.header{text-align:center}
+.nam{ margin-left:34px}
+#nom{font-size:21px; margin-bottom:55px; color:#333; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300;display:inline}
+.r{ color:#F00; font-size:34px;f font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500}
+#b{display:inline; font-weight: 300;color:#858585}
+.b{ color:#333; font-size:34px; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500}
+.g{ color:#585858; font-size:34px; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500}
+.headermy{ text-decoration:none; color: inherit;}
+a{ color: #00C}
+a.link{ color:#00C; background-color:transparent;transition: all 0.3s linear; text-decoration:none }
+a:hover { background-color:transparent; color: #c00 !important; text-decoration:none }
+a:visited{color:#00C}
+
+
+input:autofill {
+    box-shadow: 0 0 0px 1000px white inset;
+}
+ .divbtnemail{ text-align:center; width:233px; margin-left:13%}
+ .btnemail1 {background-color:#5588cc; color: #FFF !important; border-radius:0px;padding: 8px; width: 89px;float: left; border-radius:8px }
+ .btnemail1 a:hover{color: #5588cc; border:none }
+ .btnemail2 {background-color:#5588cc; color: #FFF !important; border-radius:0px;padding: 8px; width: 89px; float:right; border-radius:8px; float:left;
+  margin-left:13px !important }
+ .btnemail2 a:hover{color: #5588cc; border:none}
+/* fin global */
+
+/* index */
+.tabla h1{ font-size:24px}
+.actualizacion{ font-size:13px}
+.contactar{font-size:15px; margin-left:13px;}
+.contactar:hover { background: #fff; color: #555; text-decoration:none  }
+.table-responsive{ border:none; border-color:#888 } 
+ table{ border:none}
+.tabla{text-align:justify; margin-top:-5px;margin-right:21px; width:95%; height:265px; border:solid; border-width:1px;border-color:#999}
+#index img{-webkit-box-shadow: 8px 3px 13px rgba(144, 144, 144, 0.8);-moz-box-shadow: 8px 3px 13px rgba(144, 144, 144, 0.8);box-shadow: 8px 3px 13px rgba(144, 144, 144, 0.8)}
+img{border:none}
+img#buttoni{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
+.anchox{width:115px;}
+.mailelemet{width:233px; margin-bottom:5px}
+.compartir{width:233px; margin-bottom:5px; background:#EEE}
+.mailelemetext{width:233px; height:144px; text-align:left}
+.sep{height:12px; margin:-13px 5px 13px 13px}
+
+/* fin index */
+
+/* sant cugat */
+.precios{ font-weight:600}
+.sant-cugat{list-style:none}
+.precios{ background:#FFF}
+ul.foto{ background-color:transparent;  margin-left:-41px}
+.backfoto{background-repeat:no-repeat;background-position: right center; background-size:81px 61px/*;box-shadow: 3px 3px 3px 0px rgba(144,144,144,0.3)*/}
+.desctipus{ color:#333; font-weight:600; font-size:21px}
+.desczona{font-weight:600; font-size:18px;color:#858585}
+.refsantcugat{ color:#F00; float:right; margin-top:-8px; font-weight:600}
+.td{ margin-top:18px; margin-bottom:21px}
+.divido{border:3; border-top: 3px solid #ccc; margin-bottom:55px}
+.corta{ padding:8px 8px auto; font-size:16px; color:#333333}
+.larga{padding:8px 8px auto; font-size:18px; color:#858585}
+.tit{ font-size:18px}
+.tit2{ font-size:21px; margin:0; padding:0; margin-left:21px}
+.viv{float:left;margin-left:13px;text-align:center; margin-bottom:34px; padding-bottom: 5px; margin-top:-34px; background:#5588cc; color:#FFF; border-radius:8px}
+/* fin sant cugat */
+
+/* detalle */
+.prevBtn, .nextBtn {
+  display: block;
+  width: 30px;
+  height: 77px;
+  position: absolute;
+  left: 3%;
+  top: 38%;
+  z-index: 1000;
+  background: url(../img/btn-prev.png) no-repeat 0 0;
+  cursor: pointer;
+  opacity:0.89
+}
+.prevBtn:hover, .nextBtn:hover {
+	opacity:1
+}
+.prevBtn:before {
+display:none;
+}
+.nextBtn {
+  background: url(../img/btn-next.png) no-repeat 0 0;
+}
+.nextBtn {
+  left:96.5%;
+  margin-top:-6px
+}
+.nextBtn:after { 
+display:none;
+}
+#loanding{ box-shadow:none !important}
+#wrap{ margin-bottom:13px}
+a.zona {font-size:20px; font-weight:700; color:#333 !important; margin-left:21px}
+
+.ref{color:#F00}
+.precio{  text-align:right;text-decoration:underline; float:right; margin-top:-38px;background:#EFEFEF; padding:3px}
+.vivienda{ margin-top:-13px}
+.preciodetalle{float:right; margin-top:-13px; font-weight:600}
+.descrip{padding:13px;  background-color:#FFF; text-align: justify;font-size:16px}
+#container, #slider {width: auto}
+#slider, #slider img { width: 100%;box-shadow: 3px 8px 13px rgba(144, 144, 144, 0.8);} 
+.slidesContainer{ width:auto !important}
+.carousel{} 
+.carousel li{ list-style-type: none; display: inline}
+.slidex li{ list-style-type: none}
+img.customLink{ height:auto;box-shadow: 3px 8px 13px rgba(144, 144, 144, 0.8); margin-bottom:5px; width:58px}
+#buttoncDetalle{cursor:pointer;float:right; margin-top:0; font-size:15px; margin-top:-8px; font-size:13px }
+.ant {  padding: 0px 14px 0 14px;background-color:#5588cc; color: #FFF; border-radius:0px; width:144px; font-weight:bold;color:#FFF !important;border: 0px !important; padding:8px; border-radius:8px; cursor:pointer; font-size:13px}
+.pager li>a {background-color:#5588cc; color: #FFF; border-radius:0px; width:144px; font-weight:bold;color:#FFF !important;border: 0px !important; border-radius:8px }
+.pager li>a:hover{color: #F00 !important; border:none; display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 0px !important
+  }
+.izq{padding:0 34px 0 0;box-shadow:  0px 5px 0 0px rgba(179, 206, 228, 0.5)}
+ #fotospeq{text-align:left; margin-top:21px; margin-bottom:13px; padding:0}
+ /* fin detalle */
+ 
+ @media (max-width: 994px) {
+.viv{padding-bottom: 0px; height:34px;margin: -13px 0px 0 8px;
+    width: 94%;}
+	.tit {
+    margin-top: 10px;
+}
+}
+
+@media (max-width: 768px) {
+#slider, #slider img { width: 100%;} 
+#telini{font-size:15px; color:#555555; font-weight:500}
+#adrini{font-size:13px}
+#b{font-size:18px}
+#nom{font-size:18px}
+}
+@media (max-width: 480px) {
+
+#nom span{ font-size:18px}
+#nom { font-size:13px}
+.tit{ font-size:13px; margin-top:11px}
+.viv{padding-bottom: 0px; height:34px;margin: -13px 0px 0 8px;
+    width: 94%;}
+.descC{}
+.descTipus{  font-size: 18px;}
+a.zona {  font-size: 18px}
+.corta{ margin-top:-34px}
+.td{ margin-top:-13px}
+
+.ref{font-size: 18px}
+.table-responsive{font-size: 13px}
+.contactar{font-size: 13px}
+.descC{font-size: 13px}
+.descrip{font-size: 15px}
+.anchox{width:108px;}
+#fotolist{ height:200px;}
+#whatsapp{ font-size:9px; color:#20a413}
+#compemail{ font-size:9px; color:#5588cc}
+.vivienda{}
+.portada{ display:none}
+.reflistado{ margin-top:-55px}
+}
+
+@media (max-width: 450px) {
+	#telini{font-size:13px; color:#555; font-weight:500}
+#adrini{font-size:12px}
+	#mycolor{ background:#FFF !important}
+	#mycolorimg{ display:none}
+}
+@media (max-width: 417px) {
+.teladress{ display:none}
+}
+@media (max-width: 360px) {	
+	#buttoni{ width:45%}
+}
+@media (max-width: 320px) {
+	#telini{font-size:11px; color:#555; font-weight:500}
+	#adrini{font-size:10px}	
+	#buttoni{ width:50%}
+	.localidad{font-size:12.1px}
+	.ini{ margin-top:-61px}
+}
+
+@media handheld, only screen and (min-width: 640px) { .whatsapp{ display:none; } }
+ @media only screen and (min-width: 640px) { .whatsapp{ display:none; } }

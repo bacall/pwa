@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /bacall/
+Disallow: /api/
+Disallow: /dist/
+Disallow: /includes/
+Disallow: /movil/
+Disallow: /promocion/
+Disallow: /promocion-casa/
+Disallow: /testlaravel/
+Sitemap: http://www.pisossantcugat.net/sitemap.xml

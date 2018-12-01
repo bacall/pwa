@@ -1,0 +1,81 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Mail extends CI_Controller {
+	 
+	 public function __construct(){
+		parent::__construct();				
+	}
+	
+	public function index(){
+	$nom=$_GET["nom"];
+	$email=trim($_GET["email"]);
+	$telefono=trim($_GET["telefono"]);
+	$validate=filter_var($email, FILTER_VALIDATE_EMAIL);
+	if ($validate==false) {
+		echo "<br><br><div style='background:rgba(255, 255, 255, 0.89);  padding:8px; width:233px'><p style='color:#F00 !important;font-weight:bold'>Falta la dirección email</p></div><br><br> <a class='btnemail2' href='#' onClick='runEffectConct();'> << Volver</a></p><br><br><br><br><br>";
+	   exit();
+	}
+
+	$asunto=utf8_decode($_GET["asunto"]);
+	$fecha=time();
+	//$fecha=strftime("%d-%m-%Y %H:%M:%S",$fecha);
+	$fecha=strftime("%d-%m-%Y",$fecha);
+	$f = fopen("pisos.csv","a+");
+	$separador = ";";
+	
+	$linea = "\r\n" . $nom . $separador . $email . $separador . $telefono . $separador . $asunto. $separador . $fecha;
+	fwrite($f,$linea);
+	
+	fclose($f);
+	
+	 if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+		   $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+		}
+		elseif (isset($_SERVER['HTTP_VIA'])) {
+		   $ip = $_SERVER['HTTP_VIA'];
+		}
+		elseif (isset($_SERVER['REMOTE_ADDR'])) {
+		   $ip = $_SERVER['REMOTE_ADDR'];
+		}
+		else {
+		   $ip = "desconocida";
+		}
+/*		
+$cuerpo="Fecha :$fecha\r\nNom :$nom\r\nEmail :$email \r\nTelefono :$telefono\r\nAsunto :$asunto\r\nIP :$ip";
+
+$this->load->library("email");
+
+ $configGmail = array(
+ 'protocol' => 'smtp',
+ 'smtp_host' => 'relay-hosting.secureserver.net',
+ 'smtp_port' => 25,
+ 'smtp_user' => 'info@pisossantcugat.net',
+ 'smtp_pass' => 'miles0Ya',
+ 'mailtype' => 'html',
+ 'charset' => 'utf-8',
+ 'starttls'  => true, // changing makes no difference
+ 'smtp_crypto' =>'ssl', // tried without ssl on port 25 as wel, google not responding
+  '_smtp_auth' => true 
+ );    
+ 
+ //cargamos la configuración para enviar con gmail
+ $this->email->initialize($configGmail);
+ 
+ $this->email->from("$nom");
+ $this->email->to("$email");
+ $this->email->subject('Información Pisos Sant Cugat');
+ $this->email->message("Solicitud informacion Pisos Sant Cugat \r\n$cuerpo");
+ $ok=$this->email->send();
+ //con esto podemos ver el resultado
+ var_dump($this->email->print_debugger());
+	*/
+	   $cuerpo="Fecha :$fecha\r\nNom :$nom\r\nEmail :$email \r\nTelefono :$telefono\r\nAsunto :$asunto\r\nIP :$ip";
+	   $ok =mail("bogart@telefonica.net","Informacion Pisos Sant Cugat","Solicitud informacion Pisos Sant Cugat \r\n$cuerpo","From:$email");
+		
+		if($ok){	
+			echo "<br><br><div style='background:rgba(255, 255, 255, 0.89);  padding:8px; width:233px'><p style='color:#00C !important'>$nom su mensaje ha sido enviado correctamente.<br>Gracias</p><p></p></div><br><br> <a class='btnemail2' href='#' onClick='runEffectConct();'> << Volver</a></p><br><br><br><br><br>";
+		}else{
+			echo "<br><br><div style='background:rgba(255, 255, 255, 0.89);  padding:8px; width:233px'><p style='color:#00C  !important;'>$nom su mensaje no se ha podido enviar.<br>Error en el servidor.<br />Gracias</p><p></p></div><br><br> <a class='btnemail2' href='#' onClick='runEffectConct();'> << Volver</a><br><br><br><br><br>";
+		}
+	}	
+}
